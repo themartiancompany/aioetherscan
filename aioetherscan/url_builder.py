@@ -14,6 +14,7 @@ class UrlBuilder:
         'fantom': ('ftmscan.com', 'FTM'),
         'taiko': ('taikoscan.io', 'ETH'),
         'snowscan': ('snowscan.xyz', 'AVAX'),
+        'gnosis': ('gnasisscan.io', 'DAI'),
     }
 
     BASE_URL: str = None
