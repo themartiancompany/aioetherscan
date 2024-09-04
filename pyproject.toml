@@ -1,10 +1,13 @@
 [tool.poetry]
 name = "aioetherscan"
-version = "0.9.4"
+version = "0.9.5"
 description = "Etherscan API async Python wrapper"
-authors = ["ape364 <ape364@gmail.com>"]
+authors = [
+  "ape364 <ape364@gmail.com>",
+  "truocolo <truocolo@aol.com>",
+]
 license = "MIT"
-homepage = "https://github.com/ape364/aioetherscan"
+homepage = "https://github.com/themartiancompany/aioetherscan"
 
 [tool.poetry.dependencies]
 python = "^3.9"
