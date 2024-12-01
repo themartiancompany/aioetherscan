@@ -5,9 +5,12 @@ from urllib.parse import urlunsplit, urljoin
 class UrlBuilder:
     _API_KINDS = {
         'eth': ('etherscan.io', 'ETH'),
+        'etc': ('etc.blockscout.com', 'ETC'),
+        'ethw': ('www.oklink.com/ethw', 'ETH'),
         'bsc': ('bscscan.com', 'BNB'),
         'avax': ('snowtrace.io', 'AVAX'),
         'polygon': ('polygonscan.com', 'MATIC'),
+        'polygonzk': ('zkevm.polygonscan.com', 'ETH'),
         'optimism': ('etherscan.io', 'ETH'),
         'base': ('basescan.org', 'ETH'),
         'arbitrum': ('arbiscan.io', 'ETH'),
@@ -15,6 +18,9 @@ class UrlBuilder:
         'taiko': ('taikoscan.io', 'ETH'),
         'snowscan': ('snowscan.xyz', 'AVAX'),
         'gnosis': ('gnosisscan.io', 'DAI'),
+        'kcc': ('scan.kcc.io', 'KCS'),
+        'one': ('explorer.harmony.one', 'ONE'),
+        'arb': ('arbiscan.io', 'ETH'),
     }
 
     BASE_URL: str = None
