@@ -21,6 +21,7 @@ class UrlBuilder:
         'kcc': ('scan.kcc.io', 'KCS'),
         'one': ('explorer.harmony.one', 'ONE'),
         'arb': ('arbiscan.io', 'ETH'),
+        'doge': ('explorer.dogechain.dog', 'DOGE'),
     }
 
     BASE_URL: str = None
