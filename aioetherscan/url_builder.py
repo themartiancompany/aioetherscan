@@ -67,6 +67,7 @@ class UrlBuilder:
 
     def _get_api_url(self) -> str:
         prefix_exceptions = {
+            ('doge', True): None,
             ('optimism', True): 'api-optimistic',
             ('optimism', False): f'api-{self._network}-optimistic',
         }
