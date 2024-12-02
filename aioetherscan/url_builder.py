@@ -20,7 +20,6 @@ class UrlBuilder:
         'gnosis': ('gnosisscan.io', 'DAI'),
         'kcc': ('scan.kcc.io', 'KCS'),
         'one': ('explorer.harmony.one', 'ONE'),
-        'arb': ('arbiscan.io', 'ETH'),
         'doge': ('explorer.dogechain.dog', 'DOGE'),
     }
 
