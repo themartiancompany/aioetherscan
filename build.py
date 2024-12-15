@@ -72,7 +72,7 @@ else:
   def _build_extensions_get(
     _source_files):
     return [ _build_extension_get(
-      _file) for file in _source_files]
+      _file) for _file in _source_files]
 
   def _excluded_package_data_get(
     _source_files):
