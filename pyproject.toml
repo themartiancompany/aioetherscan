@@ -45,6 +45,7 @@ requires = [
 build-backend = "poetry.masonry.api"
 
 [tool.setuptools]
+name = "aioetherscan"
 include-package-data = false
 
 [tool.pytest.ini_options]
