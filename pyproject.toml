@@ -26,7 +26,8 @@ coveralls = "^3.3.1"
 [build-system]
 requires = [
   "poetry>=0.12",
-  "cython"]
+  "cython",
+  "setuptools"]
 build-backend = "poetry.masonry.api"
 
 [tool.pytest.ini_options]
