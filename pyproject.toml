@@ -30,6 +30,16 @@ cython = "^3.0.11"
 [tool.poetry.build]
 script = "build.py"
 generate-setup-file = true
+exclude = [
+  "aioetherscan/*.pyx",
+  "aioetherscan/modules/*.pyx",
+  "aioetherscan/modules/extra/*.pyx",
+  "aioetherscan/modules/extra/generators/*.pyx",
+  "aioetherscan/*.c",
+  "aioetherscan/modules/*.c",
+  "aioetherscan/modules/extra/*.c",
+  "aioetherscan/modules/extra/generators/*.c",
+]
 
 [tool.poetry.dev-dependencies]
 pytest = "^8.2.2"
