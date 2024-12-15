@@ -80,6 +80,7 @@ else:
     for _file in _source_files:
       _c_file = _file_extension_replace(
         _file,
+        ".c")
       _excluded_files.append(
         _c_file)
       _excluded_files.append(
