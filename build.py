@@ -14,11 +14,12 @@ else:
 
   def _extension_get(
     _extension_path):
-    _extension_name = Path(
-      _extension_path).with_suffix(
-        '').replace(
-          "/",
-          ".")
+    _extension_name = str(
+      Path(
+        _extension_path).with_suffix(
+          '')).replace(
+            "/",
+            ".")
     _extension = Extension(
       name=_extension_name,
       sources=[
