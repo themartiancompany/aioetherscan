@@ -22,7 +22,7 @@ else:
     _extension = Extension(
       name=_extension_name,
       sources=[
-        _extension_path)
+        _extension_path])
     return _extension
 
   # This function will be executed in setup.py:
