@@ -87,18 +87,30 @@ else:
         _file)
     return _excluded_files
 
+  def _included_package_data_get():
+    _included_files = [
+      "aioetherscan/*.so",
+      "aioetherscan/modules/*.so",
+      "aioetherscan/modules/extra/*.so"]
+    return _included_files 
+
   def build(
     setup_kwargs):
     _build_extensions = _build_extensions_get(
       _source_files)
     _excluded_package_data = _excluded_package_data_get(
       _source_files)
+    _included_package_data = _included_package_data_get()
     _extensions = [
       *_build_extensions
     ]
     _exclude_package_data = {
       '':
         _excluded_package_data,
+    }
+    _include_package_data = {
+      '':
+        _included_package_data,
     }
     _ext_modules = cythonize(
       _extensions,
@@ -113,6 +125,8 @@ else:
     setup_kwargs.update(
       { 'exclude_package_data':
           _exclude_package_data,
+         'package_data':
+          _include_package_data,
         'ext_modules':
           _ext_modules,
         'cmdclass':
