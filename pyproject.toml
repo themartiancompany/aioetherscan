@@ -10,7 +10,14 @@ authors = [
 license = "AGPL3"
 homepage = "https://github.com/themartiancompany/aioetherscan"
 exclude = [
-  "aioetherscan/*.pyx"
+  "aioetherscan/*.pyx",
+  "aioetherscan/modules/*.pyx",
+  "aioetherscan/modules/extra/*.pyx",
+  "aioetherscan/modules/extra/generators/*.pyx",
+  "aioetherscan/*.c",
+  "aioetherscan/modules/*.c",
+  "aioetherscan/modules/extra/*.c",
+  "aioetherscan/modules/extra/generators/*.c",
 ]
 
 [tool.poetry.dependencies]
