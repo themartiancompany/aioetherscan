@@ -9,6 +9,9 @@ authors = [
 ]
 license = "AGPL3"
 homepage = "https://github.com/themartiancompany/aioetherscan"
+exclude = [
+  "aioetherscan/*.pyx"
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
