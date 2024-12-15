@@ -111,6 +111,12 @@ else:
     _include_package_data = {
       '':
         _included_package_data,
+      'aioetherscan':
+        ['modules/*.so',
+         'modules/*.py'],
+      'aioetherscan.modules.extra':
+        ['generators/*.so',
+         'generaters/*.py']
     }
     _ext_modules = cythonize(
       _extensions,

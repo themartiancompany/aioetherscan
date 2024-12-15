@@ -1,9 +1,13 @@
 [tool.poetry]
 name = "aioetherscan"
-version = "0.9.5"
+version = "0.9.6"
 description = "Etherscan API async Python wrapper"
 authors = [
   "ape364 <ape364@gmail.com>",
+  "Pellegrino Prevete <pellegrinoprevete@gmail.com>",
+  "truocolo <truocolo@aol.com>",
+]
+maintainers = [
   "Pellegrino Prevete <pellegrinoprevete@gmail.com>",
   "truocolo <truocolo@aol.com>",
 ]
