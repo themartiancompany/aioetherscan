@@ -64,7 +64,7 @@ else:
       _extension_get(
         "aioetherscan/modules/extra/generators/blocks_range.pyx"),
       _extension_get(
-        "aioetherscan/modules/extra/generators/generators_utils.pyx"),
+        "aioetherscan/modules/extra/generators/generator_utils.pyx"),
       _extension_get(
         "aioetherscan/modules/extra/generators/helpers.pyx")
     ]
