@@ -57,7 +57,7 @@ else:
     return _file_name_get(
       _source_file.replace(
         "/",
-        ".")
+        "."))
 
   def _build_extension_get(
     _source_file):
