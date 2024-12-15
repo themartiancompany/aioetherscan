@@ -9,13 +9,17 @@ authors = [
 ]
 license = "AGPL3"
 homepage = "https://github.com/themartiancompany/aioetherscan"
-build = 'build.py'
 
 [tool.poetry.dependencies]
 python = "^3.9"
 aiohttp = "^3.4"
 asyncio_throttle = "^1.0.1"
 aiohttp-retry = "^2.8.3"
+cython = "^3.0.11"
+
+[tool.poetry.build]
+script = "build.py"
+generate-setup-file = true
 
 [tool.poetry.dev-dependencies]
 pytest = "^8.2.2"

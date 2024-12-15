@@ -18,9 +18,8 @@ else:
       "aioetherscan/client.pyx",
       "aioetherscan/common.pyx",
       "aioetherscan/exceptions.pyx",
-      "aioetherscan/modules",
       "aioetherscan/network.pyx",
-      "aioetherscan/url_builder.pyx"
+      "aioetherscan/url_builder.pyx",
       "aioetherscan/modules/account.pyx"
     ]
     os.environ['CFLAGS'] = '-O3'
