@@ -41,7 +41,7 @@ else:
     return str(
       Path(
         _path).with_suffix(
-          '')
+          ''))
 
   def _file_extension_replace(
     _path,
