@@ -1,12 +1,19 @@
 # aioetherscan
 
-[![PyPi](https://img.shields.io/pypi/v/aioetherscan.svg)](https://pypi.org/project/aioetherscan/)
-[![License](https://img.shields.io/pypi/l/aioetherscan.svg)](https://pypi.org/project/aioetherscan/)
-[![Coveralls](https://img.shields.io/coveralls/ape364/aioetherscan.svg)](https://coveralls.io/github/ape364/aioetherscan)
-[![Versions](https://img.shields.io/pypi/pyversions/aioetherscan.svg)](https://pypi.org/project/aioetherscan/)
+[![PyPi](
+  https://img.shields.io/pypi/v/aioetherscan.svg)](https://pypi.org/project/aioetherscan/)
+[![License](
+  https://img.shields.io/pypi/l/aioetherscan.svg)](https://pypi.org/project/aioetherscan/)
+[![Coveralls](
+  https://img.shields.io/coveralls/ape364/aioetherscan.svg)](https://coveralls.io/github/ape364/aioetherscan)
+[![Versions](
+  https://img.shields.io/pypi/pyversions/aioetherscan.svg)](https://pypi.org/project/aioetherscan/)
 
-
-[Etherscan.io](https://etherscan.io) [API](https://etherscan.io/apis) async Python non-official wrapper.
+[EIP3091](
+  https://eips.ethereum.org/EIPS/eip-3091)
+compliant explorers (i.e. [Etherscan.io](
+  https://etherscan.io) [API](https://etherscan.io/apis)
+async Python (Cython) wrapper.
 
 ## Features
 
@@ -31,27 +38,27 @@ Also provides `extra` module, which supports:
 
 ### Blockchains
 
-Supports blockchain explorers:
-
-* [Etherscan](https://docs.etherscan.io/getting-started/endpoint-urls)
-* [BscScan](https://docs.bscscan.com/getting-started/endpoint-urls)
-* [SnowTrace](https://snowtrace.io/documentation/etherscan-compatibility/accounts)
-* [PolygonScan](https://docs.polygonscan.com/getting-started/endpoint-urls)
-* [Optimism](https://docs.optimism.etherscan.io/getting-started/endpoint-urls)
-* [Arbiscan](https://docs.arbiscan.io/getting-started/endpoint-urls)
-* [FtmScan](https://docs.ftmscan.com/getting-started/endpoint-urls)
-* [Basescan](https://docs.basescan.org/getting-started/endpoint-urls)
-* [Taikoscan](https://docs.taikoscan.io/getting-started/endpoint-urls)
-* [SnowScan](https://docs.snowscan.xyz/getting-started/endpoint-urls)
+Includes support for loading any blockchain supported by
+[`evm-chains-info`](
+  https://github.com/themartiancompany/evm-chains-info)
+through [`evm-chains-explorers`](
+  https://github.com/themartiancompany/evm-chains-explorers).
+Just provide the blockchain chainId.
 
 ## Installation
 
+The module is available on the [Ur github mirror](
+ https://github.com/themartiancompany/python-aioetherscan-ur).
+
+To build locally just run
+
 ```sh
-pip install -U aioetherscan
+  lur \
+    python-aioetherscan
 ```
 
 ## Usage
-Register Etherscan account and [create free API key](https://etherscan.io/myapikey).
+On some explorers some methods require an API key.
 
 ```python
 import asyncio
@@ -93,3 +100,7 @@ if __name__ == '__main__':
     asyncio.run(main())
 
 ```
+
+## License
+
+The module is released under the terms of the GNU Affero General Public License version 3. 
