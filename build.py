@@ -87,31 +87,34 @@ else:
         _file)
     return _excluded_files
 
-  _build_extensions = _build_extensions_get(
-    _source_files)
-  _excluded_package_data = _excluded_package_data_get(
-    _source_files)
-
-  # This function will be executed in setup.py:
   def build(
     setup_kwargs):
-    extensions = [
+    _build_extensions = _build_extensions_get(
+      _source_files)
+    _excluded_package_data = _excluded_package_data_get(
+      _source_files)
+    _extensions = [
       *_build_extensions
     ]
-    exclude_package_data={
-        '': _excluded_package_data,
+    _exclude_package_data = {
+      '':
+        _excluded_package_data,
     }
+    _ext_modules = cythonize(
+      _extensions,
+      language_level = 3,
+      compiler_directives = {
+        'linetrace':
+          True })
+    _cmdclass = {
+      'build_ext':
+        build_ext }
     os.environ['CFLAGS'] = '-O3'
-    setup_kwargs.update({
-      'ext_modules':
-        cythonize(
-          extensions,
-          language_level=3,
-          compiler_directives={
-            'linetrace':
-              True },
-      ),
-      'cmdclass':
-        { 'build_ext':
-           build_ext }
-    })
+    setup_kwargs.update(
+      { 'exclude_package_data':
+          _exclude_package_data,
+        'ext_modules':
+          _ext_modules,
+        'cmdclass':
+          _cmdclass
+      })
