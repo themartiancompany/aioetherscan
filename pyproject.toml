@@ -21,20 +21,16 @@ include = [
 ]
 exclude = [
  { path = "aioetherscan/*.pyx", format = "wheel" },
- { path = "aioetherscan/*.c", format = ["sdist",
-                                        "wheel" },
+ { path = "aioetherscan/*.c", format = ["sdist", "wheel" },
  { path = "aioetherscan/*.so", format = "sdist" },
  { path = "aioetherscan/modules/*.pyx", format = "wheel" },
- { path = "aioetherscan/modules/*.c", format = ["sdist",
-                                                "wheel" },
+ { path = "aioetherscan/modules/*.c", format = ["sdist", "wheel" },
  { path = "aioetherscan/modules/*.so", format = "sdist" },
  { path = "aioetherscan/modules/extra/*.pyx", format = "wheel" },
- { path = "aioetherscan/modules/extra/*.c", format = ["sdist",
-                                                      "wheel" },
+ { path = "aioetherscan/modules/extra/*.c", format = ["sdist", "wheel" },
  { path = "aioetherscan/modules/extra/*.so", format = "sdist" },
  { path = "aioetherscan/modules/extra/generators/*.pyx", format = "wheel" },
- { path = "aioetherscan/modules/extra/generators/*.c", format = ["sdist",
-                                                                 "wheel" },
+ { path = "aioetherscan/modules/extra/generators/*.c", format = ["sdist", "wheel" },
  { path = "aioetherscan/modules/extra/generators/*.so", format = "sdist" },
 ]
 
