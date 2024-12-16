@@ -17,7 +17,7 @@ install_requires = \
 
 setup_kwargs = {
     'name': 'aioetherscan',
-    'version': '0.9.6',
+    'version': '0.9.6.1',
     'description': 'Etherscan API async Python wrapper',
     'long_description': 'None',
     'author': 'Pellegrino Prevete',
