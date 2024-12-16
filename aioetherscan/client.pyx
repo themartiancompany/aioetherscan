@@ -29,7 +29,10 @@ class Client:
         throttler: AsyncContextManager = None,
         retry_options: RetryOptionsBase = None,
     ) -> None:
-        self._url_builder = UrlBuilder(api_key, api_kind, network)
+        self._url_builder = UrlBuilder(
+          api_key,
+          api_kind,
+          network)
         self._http = Network(self._url_builder, loop, timeout, proxy, throttler, retry_options)
 
         self.account = Account(self)
